@@ -1,0 +1,510 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>反方</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.701961); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid-page; break-before: avoid-page; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid-page; }
+  .typora-export #write::after { height: 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    padding-bottom: .3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+   padding-bottom: .3em;
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export' >
+<div  id='write'  class = 'is-mac'><h1><a name="辯論" class="md-header-anchor"></a><span>辯論</span></h1><blockquote><p><strong><span>國有財產法 第52-2條</span></strong></p><p><span>非公用財產類之不動產，於民國三十五年十二月三十一日以前已供建築、居住使用至今者，其直接使用人得於民國一百零四年一月十三日前，檢具有關證明文件，向財政部國有財產局或所屬分支機構申請讓售。經核准者，其土地面積在五百平方公尺以內部分，得按第一次公告土地現值計價。</span></p></blockquote><p>&nbsp;</p><h2><a name="爭論點" class="md-header-anchor"></a><span>爭論點</span></h2><p><span>國有財產法第52-2條是否為私法性質</span></p><h2><a name="反方論點" class="md-header-anchor"></a><span>反方論點</span></h2><h3><a name="" class="md-header-anchor"></a><span> </span></h3><h3><a name="新主體說" class="md-header-anchor"></a><span>新主體說</span></h3><p><span>僅對國家或其他高權主體為規定者為，為公法。反之，對所有人皆適用之法律，則為私法。</span>
+<span>依照此說，公法為國家之特別法（專為公權力主體量身定作的「特別法」）；反之，私法則為「人人之法」。</span></p><h3><a name="釋字448" class="md-header-anchor"></a><span>釋字448</span></h3><p><span>本院釋字第448號解釋之解釋文明示：「行政機關代表國庫出售或出柤公有財產，並非行使公權力對外發生法律上效果之單方行政行為，即非行政處分，而屬私法上契約行為，當事人若對之爭執，自應循民事訴訟程序解決。」。查由本件解釋理由書第3段文字與本院釋字第448號解釋文中段文字相同，且本件解釋並無欲變更本院釋字第448號解釋之文字，自應認本院釋字第448號解釋未經變更，而仍有效。次查國有財產法第52條之2規定屬國有財產法之規定，且係以「由國有財產署（局）管理之非公用財產類之不動產」為標的，該規定並與自第49條起至第54條止之其他規定，同屬國有財產法第六章第一節「非公用財產類不動產之處分」，而且該節規定即係關於非公用財產類不動產如何讓售與人民之規定，也就是本院釋字第448號解釋所指為行政機關之國有財產署代表國庫（價金歸國庫）出售公有財產之典型行為，在本院釋字第448號解釋仍有效之前提下，關於人民與國有財產署間就依國有財產法第52條之2規定申請讓售所生爭議，與同節其他讓售爭議同，自非關行政處分。</span></p><p>&nbsp;</p><h3><a name="公共利益私人利益" class="md-header-anchor"></a><span>公共利益？私人利益？</span></h3><p><span>尤其本件解釋理由書第5段既由國有財產法第52條之2之立法資料出發，肯認「係鑑於政府辦理土地總登記時，因當時資訊不發達，人民未必熟悉法律，以致甚多人民世代居住之土地被登記為國有，而形成占用國有土地之情形，為解決該等人民之問題，才增訂上開規定，讓人民得以申請讓售其已長期居住使用而經登記為國有之土地。」（原始立法委員提案增訂文字為：「國有非公用財產類之不動產由直接使用人於民國34年10月25日以前使用至今者，應無償發還于該直接使用人或直接使用之合法繼承人。但該不動產已繳之售價、租金或使用補償金不得要求返還。」）。上開立法意旨尤其原始提案，暗藏還地於民之旨。</span></p><p><span>還地於民，係物上請求權之作用；取得時效係民法之規定，俱係私法性質，且與國有財產法第49條之有租賃關係之讓售，性質相同；後者所生爭議由普通法院管轄既無異見，本件爭議何獨應不然？</span></p><h3><a name="國有財產法第49條" class="md-header-anchor"></a><span>國有財產法第49條</span></h3><p><span>財政部訴願決定書（案號：第10400809號）</span></p><h3><a name="系爭國有財產署否准讓售函是行政處分嗎" class="md-header-anchor"></a><span>系爭國有財產署否准讓售函是行政處分嗎？</span></h3><p><span>再者，由系爭否准讓售函觀之，國有財產署係認申請人所提證明文件不足證明其為國有財產法第52條之2規定所定之直接占有人，即本件爭議係申請人是否直接占有人之「事實」爭議。查該規定既賦與人民請求讓售權，本件解釋理由書第5段又肯認：「申請人暨所申請讓售之不動產若均符合規定，主管機關即應准許其申請，並以法律規定之計估方法決定讓售價格」，則自應已認符合申請資格之特定申請人（特定國有非公用財產類之不動產之自35年12月31日以前已供建築居住使用至今之直接占有人）（買受人），於其提出讓售申請時即已與為主管機關之國有財產署（出賣人）間，就該特定土地（買賣標的物），已成立以法律所已規定之計估方法決定之價格（買賣價格）買賣之契約，至少是認國有財產署對該申請人之申請有承諾（讓售）義務。按不論是成立了買賣契約或國有財產署有承諾義務，其性質均為契約相關，均非屬行政處分。又本件爭議也不過係因特定申請人是否符合國有財產法第52條之2規定，所致生其與國有財產署間就特定非公用不動產，已否成立買賣契約或國有財產署是否應承諾而不承諾之買賣爭議（履約爭議）而已，何來公權力之單方行使？何來系爭函對為人民之申請人之規制效力（申請人與國有財產署應立於私法契約當事人對等關係，且本件爭議僅係關於事實存否之爭執，故與釋字第691號及第695號等解釋所示情形容有差異）？又本件無關羈束處分（並非如課人民以納稅義務或罰鍰、拘留等行政罰，只是拒絕讓售或拒絕承諾讓售而已），本件解釋意旨也肯認國有財產署對讓售與否無裁量權，則本件相關准駁，顯非行政處分，自不應因之而致本件爭議乃應由行政法院管轄。</span></p><ol start='' ><li><span>國有財產法第52條之2規定具有強烈政策色彩：國有財產法之讓售規定均具政策色彩，但依本院釋字第448號解釋，其爭議屬私法性質，應由普通法院審判；且政策（行政任務）之執行，得以公法上行為或私法上行為作為實施之手段。故具政策色彩不等於其實施手段即係公法上行為，而仍應依行為之性質定審判權之歸屬（本院釋字第540號解釋參照）。</span></li><li><span>國有財產署審查確認是否合於國有財產法第52條之2規定，以決定是否准駁之事，屬公權力行使：為系爭函前，國家內部關係（屬國有財產署之職務領域）審查確認事實之程序（審查確認申請是否合於規定）固有權力性質，但不能由此前行程序推論得出系爭函之准駁即為公權力行使。</span></li><li><span>國家為一方當事人且一般人民不可能為該法律關係主體：本件解釋未採法規主體說，而仍採爭議性質說（解釋理由書第3段）。而且在一般人民間無權占有爭訟或時效取得爭訟中，也可能因兩造調解、和解而成立類似讓售不動產關係。</span></li></ol><figure><table><thead><tr><th><strong><span>釋字</span></strong></th><th><strong><span>爭點</span></strong></th><th><strong><span>結論</span></strong></th><th><strong><span>理由</span></strong></th></tr></thead><tbody><tr><td><span>759</span></td><td><span>（前）臺灣省自來水股份有限公司人員依「臺灣省政府所屬省營事業機構人員退休撫卹及資遣辦法」請求發給撫卹金發生爭議，其訴訟應由何種法院審判？</span></td><td><span>普通法院</span></td><td><span>依公司法設立之公營事業中，除前述特定人員以外，其他人員與其所屬公營事業間之法律關係為私法關係。雖主管機關就省營事業機構人員之退休撫卹發布省營事業機構人員退撫辦法，使其人員之退休撫卹有一致之標準，惟其僅係主管機關對公營事業之監督關係，並不影響公營事業與該人員間之私法關係屬性……本件原因事件原告之父與（前）省自來水公司間之關係既為私法上契約關係，而請求發給撫卹金係本於契約關係所生之請求，且前揭退撫辦法亦為上開私法契約關係之一部，是原告依前揭退撫辦法之規定，向（前）省營事業機構請求發給撫卹金發生爭議，應屬私法關係所生之爭議……。</span></td></tr><tr><td><span>758</span></td><td><span>土地所有權人依民法第767條第1項請求返還土地事件，攻擊防禦方法涉及公用地役關係存否之公法關係爭議者，其審判權之歸屬？</span></td><td><span>普通法院</span></td><td><span>土地所有權人依民法第767條第1項請求事件，核其性質，屬私法關係所生之爭議，其訴訟應由普通法院審判，縱兩造攻擊防禦方法涉及公法關係所生之爭議，亦不受影響。</span></td></tr><tr><td><span>*540</span></td><td><span>國宅條例收回國宅強執事件之審判權歸屬為何？</span></td><td><span>普通法院</span></td><td><span>本件國民住宅之買賣既屬私法關係，國民住宅之所有人或居住人有國民住宅條例第21條第1項……前段規定：「國民住宅主管機關得收回該住宅及基地，並得移送法院裁定後強制執行」，乃針對特定違約行為之效果賦予執行力之特別規定，此等涉及私權法律關係之事件為民事事件，該條所稱之法院係指普通法院而言。</span></td></tr><tr><td><span>*448</span></td><td><span>行政機關出售、出租公有財產所生爭議，應由何種法院審判？</span></td><td><span>普通法院</span></td><td><span>行政機關代表國庫出售或出租公有財產，並非行使公權力對外發生法律上效果之單方行政行為，即非行政處分，而屬私法上契約行為，當事人若對之爭執，自應循民事訴訟程序解決。</span></td></tr><tr><td><span>305</span></td><td><span>公營事業依公司法規定設立者，與其人員間如就契約關係已否消滅有爭執，應由何種法院審判？</span></td><td><span>普通法院</span></td><td><span>公營事業依公司法規定設立公司者，雖可簡稱為公營公司，但其性質仍為私法人，具有獨立之人格，自為權利義務之主體，享受權利，負擔義務。因之，公營公司與其人員間，係以私法人地位依其人事規章，經由委任（選任、聘任或僱用）之途徑，雙方成立私法上之契約關係……。</span></td></tr><tr><td><span>89</span></td><td><span>行政官署依臺灣省放領公有耕地扶植自耕農實施辦法，將公有耕地放領於人民，其因放領之撤銷或解除所生之爭執，應由何種法院審判？</span></td><td><span>普通法院</span></td><td><span>臺灣省放領公有耕地扶植自耕農實施辦法係政府為扶植自耕農而將公有耕地放領於耕作人，私有耕作其是否承領，承領人本可自由選擇，並非強制，其放領行為屬於代表國家與承領人訂立私法上之買賣契約……。</span></td></tr><tr><td><span>695</span></td><td><span>行政院農業委員會林務局所屬各林區管理處對於人民依據國有林地濫墾地補辦清理作業要點申請訂立租地契約未為准許之決定，應由何種法院審判？</span></td><td><span>行政法院</span></td><td><span>按補辦清理之目的在於解決國有林地遭人民濫墾之問題，涉及國土保安長遠利益（森林法第5條規定參照）。故林區管理處於審查時，縱已確認占用事實及占用人身分與系爭要點及有關規定相符，如其訂約有違林地永續經營或國土保安等重大公益時，仍得不予出租。是林區管理處之決定，為是否與人民訂立國有林地租賃契約之前，基於公權力行使職權之行為，仍屬公法性質……。</span></td></tr><tr><td><span>691</span></td><td><span>受刑人不服行政機關不予假釋之決定者，在相關法律修正前，應由何種法院審判？</span></td><td><span>行政法院</span></td><td><span>在相關法律修正前，鑑於行政機關不予假釋之決定具有行政行為之性質，依照行政訴訟法第2條以下有關規定，此類爭議由行政法院審理。</span></td></tr><tr><td><span>533</span></td><td><span>健保局與醫療機構履約爭議應由何種法院審判？</span></td><td><span>行政法院</span></td><td><span>中央健康保險局與保險醫事服務機構締結之全民健康保險特約醫事服務機構合約……以達成促進國民健康、增進公共利益之行政目的。又為擔保特約醫事服務機構確實履行其提供醫療服務之義務，以及協助中央健康保險局辦理各項保險行政業務，除於合約中訂定中央健康保險局得為履約必要之指導外，並為貫徹行政目的，全民健康保險法復規定中央健康保險局得對特約醫事服務機構處以罰鍰之權限，使合約當事人一方之中央健康保險局享有優勢之地位，故此項合約具有行政契約之性質。締約雙方如對契約內容發生爭議，自屬公法上爭訟事件。</span></td></tr><tr><td><span>466</span></td><td><span>公保給付之爭議之應由何種法院審判？</span></td><td><span>行政法院</span></td><td><span>按公務人員保險為社會保險之一種，具公法性質，關於公務人員保險給付之爭議，自應循行政爭訟程序解決，且公務人員之公法上財產請求權遭受侵害時，得依訴願及行政訴訟程序請求救濟，亦經本院釋字第266號及第312號解釋闡釋在案。</span></td></tr><tr><td><span>312</span></td><td><span>公務員退休請領福利互助金所生爭執，應由何種法院審判？</span></td><td><span>行政法院</span></td><td><span>行政院發布之中央公教人員福利互助辦法或其他機關自行訂定之福利互助有關規定，係各機關為安定公務人員生活之行政目的而實施之法令，並有提供公款予以補助者，具有公法性質。現行司法救濟程序，既採民事訴訟與行政爭訟區分之制度，公務人員退休，依據上述法令規定，請領福利互助金，乃屬公法上財產請求權之行使，如遭有關機關拒絕，將影響其憲法所保障之財產權，依上開意旨，自應許其提起訴願或行政訴訟……。</span></td></tr><tr><td><span>115</span></td><td><span>政府依實施耕者有其田條例所為之耕地徵收或放領所生之爭執，應由何種法院審判？</span></td><td><span>行政法院</span></td><td><span>政府依實施耕者有其田條例所為之耕地徵收或放領，均係基於公權力之行為。</span></td></tr></tbody></table></figure><h3><a name="公用公有" class="md-header-anchor"></a><span>公用公有</span></h3><p><span>公用土地指各機關、部隊、學校、辦公、作業及宿舍使用之公務用土地，或直接供公共或事業使用之公共用及事業用之土地等均屬之。上開公用土地範圍以外，可供處分、收益之土地，則屬非公用土地。</span></p><blockquote><p><strong><span>國有財產法 第4條</span></strong></p><p><span>國有財產區分為公用財產與非公用財產兩類。</span></p><p><span>左列各種財產稱為公用財產：</span>
+<span>	</span><span>一、公務用財產：各機關、部隊、學校、辦公、作業及宿舍使用之國有財產均屬之。</span>
+<span>	</span><span>二、公共用財產：國家直接供公共使用之國有財產均屬之。</span>
+<span>	</span><span>三、事業用財產：國營事業機關使用之財產均屬之。但國營事業為公司組織者，僅指</span><span>			</span><span>其股份而言。</span>
+<span>非公用財產，係指公用財產以外可供收益或處分之一切國有財產。</span></p></blockquote><p>&nbsp;</p><h3><a name="448-vs-772" class="md-header-anchor"></a><span>448 vs 772</span></h3><figure><table><thead><tr><th><code></code></th><th><span>釋字第772號解釋</span></th><th><span>釋字第448號解釋</span></th></tr></thead><tbody><tr><td><span>解釋文</span></td><td><span>財政部國有財產局或所屬分支機構，就人民依國有財產法第52條之2規定，申請讓售國有非公用財產類不動產之准駁決定，屬公法性質，人民如有不服，應依法提起行政爭訟以為救濟，其訴訟應由行政法院審判</span></td><td><span>行政機關代表國庫出售或出租公有財產，並非行使公權力對外發生法律上效果之單方行政行為，即非行政處分，而屬私法上契約行為，當事人若對之爭執，自應循民事訴訟程序解決</span></td></tr><tr><td><span>法律依據</span></td><td><span>法律特別規定</span></td><td><span>一般租售規定</span></td></tr><tr><td><span>特殊背景</span></td><td><span>基於特殊時空背景</span></td><td><span>無特殊背景因素</span></td></tr><tr><td><span>國家統治權之行使</span></td><td><span>有</span></td><td><span>無</span></td></tr><tr><td><span>申購審核</span></td><td><span>有准駁申購審核是公權力之行使</span></td><td><span>無所謂准駁申購審核非公權力之行使</span></td></tr><tr><td><span>爭議性質</span></td><td><span>公法關係所生之爭議</span></td><td><span>私法關係所生之爭議</span></td></tr></tbody></table></figure><h2><a name="反方脈絡" class="md-header-anchor"></a><span>反方脈絡</span></h2><p><span>沒有法律規定</span>&rarr;<span>針對本件案件性質來區分公法或是司法</span>&rarr;<span>區分學說</span></p><p>&nbsp;</p><h2><a name="正方說448不適用時" class="md-header-anchor"></a><span>正方說448不適用時</span></h2><h3><a name="背景不同" class="md-header-anchor"></a><span>背景不同</span></h3><p><span>行政機關出售與人民之行為仍然相同</span></p><h3><a name="屬於給付行政" class="md-header-anchor"></a><span>屬於給付行政</span></h3><p><span>給付行政中（行政私法）有一項為行政機關出租、借貸或出售公有財產</span></p><p><span>給付行政又稱為服務行政或是福利行政。(例如：社會福利的收入戶行政、殘障津貼、老人安養)。指的是提供人民給付或服務和利益給人民之行政，就現代國家兼顧照顧人民的職責，此種作用甚具意義。</span></p><h4><a name="釋字第455-號解釋-人事行政局就留職停薪入伍者年資採認之函釋違憲" class="md-header-anchor"></a><span>釋字第455 號解釋 人事行政局就留職停薪入伍者年資採認之函釋違憲？</span></h4><p><span>近來因國家職能之擴張，給付行政漸受重視，以法律給予人民一定利益或賦予人民向國家請求給付之權利等情形亦日益增多，</span><strong><span>人民據此所取得之權利與其信賴利益，應受保障</span></strong><span>。</span></p><p><span>而給付行政因涉及國家財政資源分配，於不違背憲法之原理原則之前提下，立法者得作合理的調整。故當此類法令經釋憲者評價為違憲時，基於人民既有權利之維護與立法者形成自由之尊重等考量，對其效力宣告之方式不應一成不變，以因應時代潮流。</span></p><p><span>此於其係違反憲法之平等原則時，尤有必要。按具有給付性質之法規，如因授予特定對象特權而被釋憲者認為違反平等原則時，因此本屬額外利益之給予，由釋憲者以宣告該法規無效之方式除去此違憲狀態，固無不可。</span></p><p><strong><span>然若該法規所規範者係國家應為之給付，而立法者僅賦予一部分人權利，就其他應予包括者則排除在外或漏未規定，此時，由於受益者本有依法請求給付之權利，釋憲者如斷然宣告此法規失去效力，一併剝奪原受益者之權利，將更不符合憲法意旨。</span></strong></p><p><span>如前所述，憲法平等原則之旨意，乃在禁止國家權力對人民為不合理之差別對待，故因法規違反平等原則所造成之違憲狀態，有時尚須有關機關之調整與修正，方能完全除去，以真正達成平等之法秩序。至於此等違憲狀態之除去，究應 刪除原有賦予權利之規定、將受不利對待者納入目前有利之規範中、或 重行規定賦予權利之要件，原則上立法者應有其自由形成的空間，釋憲者應斟酌個案情形，不宜一律宣告該規範無效或逕自將受不利待遇者納入有利之規範中，以免侵害原受益者之權益或干預立法者之形成自由。</span></p></div>
+</body>
+</html>
