@@ -1,16 +1,32 @@
-# presentation
+# Presentation
 
-* cps
+This page describe the structure of presentation.yzchen.tw.
 
-  * [demo](https://presentation.yzchen.tw/cps/demo)
+## BacBacDiary
 
-    > Demo keynote for cps programming
+* [Bacbacdiary](https://presentation.yzchen.tw/bacbacdiary)
 
-* 1081 course
+## cps
 
-  * innovation
+* [demo](https://presentation.yzchen.tw/cps/demo)
 
-    * [Starbucks](http://presentation.yzchen.tw/1081/innovation/starbucks)
+  > Demo keynote for cps programming
 
-      > Starbucks marketing strategy analysis
+## 1081 course
 
+### Innovation
+
+* [Starbucks](https://presentation.yzchen.tw/1081/innovation/starbucks)
+
+  > Starbucks marketing strategy analysis
+
+### Claim
+
+* [Midterm](https://presentation.yzchen.tw/1081/claim/midterm)
+
+  > 107 民專上 35 
+
+### Administrative
+
+* [772](https://presentation.yzchen.tw/1081/administrative/772.pdf)
+* [778](https://presentation.yzchen.tw/1081/administrative/778.pdf)
