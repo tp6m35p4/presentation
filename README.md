@@ -16,7 +16,7 @@ This page describe the structure of presentation.yzchen.tw.
 
 ### Innovation
 
-* [Starbucks](https://presentation.yzchen.tw/1081/innovation/starbucks)
+* [Starbucks keynote](https://presentation.yzchen.tw/1081/innovation/starbucks)
 
   > Starbucks marketing strategy analysis
 
