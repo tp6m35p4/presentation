@@ -24,6 +24,8 @@ This page describe the structure of presentation.yzchen.tw.
 
 * [Midterm](https://presentation.yzchen.tw/1081/claim/midterm)
 
+  * [PDF](https://presentation.yzchen.tw/1081/claim/期中報告_陳宇震.pdf)
+  
   > 107 民專上 35 
 
 ### Administrative
