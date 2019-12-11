@@ -32,3 +32,8 @@ This page describe the structure of presentation.yzchen.tw.
 
 * [772](https://presentation.yzchen.tw/1081/administrative/772.pdf)
 * [778](https://presentation.yzchen.tw/1081/administrative/778.pdf)
+
+### Patent Law
+
+* [團體簡報 - 106民專上字4號](https://presentation.yzchen.tw/1081/patentlaw/group/106年民專上字4號.pdf)
+
