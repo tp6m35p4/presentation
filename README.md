@@ -32,7 +32,7 @@ This page describe the structure of presentation.yzchen.tw.
 
 * [772](https://presentation.yzchen.tw/1081/administrative/772.pdf)
 * [778](https://presentation.yzchen.tw/1081/administrative/778.pdf)
-* [702]((https://presentation.yzchen.tw/1081/administrative/702.pdf)
+* [702](https://presentation.yzchen.tw/1081/administrative/702.pdf)
 
 ### Patent Law
 
