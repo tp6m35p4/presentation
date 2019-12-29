@@ -28,6 +28,12 @@ This page describe the structure of presentation.yzchen.tw.
   
   > 107 民專上 35 
 
+* [Final](https://presentation.yzchen.tw/1081/claim/final)
+
+  * [PDF](https://presentation.yzchen.tw/1081/claim/期末報告_陳宇震.pdf)
+
+  > Fiber, LLC v. Ciena Corporation, 2019 WL 6216149
+
 ### Administrative
 
 * [772](https://presentation.yzchen.tw/1081/administrative/772.pdf)
