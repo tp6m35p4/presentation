@@ -44,3 +44,7 @@ This page describe the structure of presentation.yzchen.tw.
 
 * [團體簡報 - 106民專上字4號](https://presentation.yzchen.tw/1081/patentlaw/group/106年民專上字4號.pdf)
 
+### Valuation
+
+* [著作權之二次使用-谷阿莫事件](https://presentation.yzchen.tw/1081/valuation/final)
+
