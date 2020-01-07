@@ -47,4 +47,3 @@ This page describe the structure of presentation.yzchen.tw.
 ### Valuation
 
 * [著作權之二次使用-谷阿莫事件](https://presentation.yzchen.tw/1081/valuation/final)
-
