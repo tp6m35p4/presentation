@@ -47,3 +47,12 @@ This page describe the structure of presentation.yzchen.tw.
 ### Valuation
 
 * [著作權之二次使用-谷阿莫事件](https://presentation.yzchen.tw/1081/valuation/final)
+
+
+
+## 1082 course
+
+### 專利訴訟與無效攻防
+
+* [1](https://presentation.yzchen.tw/1082/專利訴訟與無效攻防/訴訟攻防(1)宇震.pdf)
+
