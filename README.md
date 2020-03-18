@@ -56,3 +56,9 @@ This page describe the structure of presentation.yzchen.tw.
 
 * [1](https://presentation.yzchen.tw/1082/專利訴訟與無效攻防/訴訟攻防(1)宇震.pdf)
 
+### 書報討論
+
+#### Profiting from technological innovation: Implications for integration, collaboration, licensing and public policy 20200318
+
+* [slides](https://presentation.yzchen.tw/1082/seminar/1)
+
