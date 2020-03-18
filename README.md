@@ -62,5 +62,7 @@ This page describe the structure of presentation.yzchen.tw.
 
 * [slides](https://presentation.yzchen.tw/1082/seminar/1)
 
+* [PDF](https://presentation.yzchen.tw/1082/seminar/1.pdf)
+
 * [keynote stream](https://presentation.yzchen.tw/1082/seminar/1-keynote)
 
