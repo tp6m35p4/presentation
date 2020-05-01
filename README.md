@@ -69,3 +69,8 @@ This page describe the structure of presentation.yzchen.tw.
 * [PDF](https://presentation.yzchen.tw/1082/seminar/1.pdf)
 
 * [keynote stream](https://presentation.yzchen.tw/1082/seminar/1-keynote)
+
+#### 論人工智慧創作與發明之法律保護— 以著作權與專利權權利主體為中心
+
+[slides](https://presentation.yzchen.tw/1082/seminar/論人工智慧創作與發明之法律保護— 以著作權與專利權權利主體為中心_陳宇震.pdf)
+
