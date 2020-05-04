@@ -16,5 +16,19 @@ Institution Decision Date: 03/27/2020
 
 ## Decision
 
-[link](https://presentation.yzchen.tw/1082/teslavnikola/0001-IPR2019-01646 DI - Ready for Mailing (Circ).pdf)
+[file](https://presentation.yzchen.tw/1082/teslavnikola/0001-IPR2019-01646 DI - Ready for Mailing (Circ).pdf)
+
+## Patent at issue
+
+[file](https://presentation.yzchen.tw/1082/teslavnikola/0001-IPR2019-01646 DI - Ready for Mailing (Circ).pdf)
+
+* Patent Number: US 10,077,084 B2
+
+* Date of Patent: 09/18/2018
+
+* Application Date: 12/30/2016
+
+* Title: SYSTEMS, METHODS, AND DEVICES FOR AN AUTOMOBILE DOOR OR WINDOW
+
+
 
