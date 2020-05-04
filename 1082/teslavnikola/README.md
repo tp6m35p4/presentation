@@ -1,5 +1,7 @@
 # IPR2019-01646
 
+Tesla was suit by Nikola due to infringe its 3 patents. Tesla stroke back with filling an IPR review try to make Nikola's patent invalid.
+
 ## Bio Data
 
 Petitioner: Tesla, Inc
