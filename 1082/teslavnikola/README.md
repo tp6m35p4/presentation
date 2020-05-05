@@ -22,7 +22,9 @@ Institution Decision Date: 03/27/2020
 
 ## Patent at issue
 
-[file](https://presentation.yzchen.tw/1082/teslavnikola/0001-IPR2019-01646 DI - Ready for Mailing (Circ).pdf)
+
+
+[file](https://presentation.yzchen.tw/1082/teslavnikola/0029-1001 US 10,077,084.PDF)
 
 * Patent Number: US 10,077,084 B2
 
@@ -34,3 +36,7 @@ Institution Decision Date: 03/27/2020
 
 
 
+| D811944 | Fuselage        | 2015-12-29 |
+| ------- | --------------- | ---------- |
+| D811968 | Wrap Windshield | 2015-12-29 |
+| D816004 | Side Door       | 2015-12-29 |
