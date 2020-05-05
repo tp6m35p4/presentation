@@ -40,3 +40,15 @@ Institution Decision Date: 03/27/2020
 | ------- | --------------- | ---------- |
 | D811968 | Wrap Windshield | 2015-12-29 |
 | D816004 | Side Door       | 2015-12-29 |
+
+
+
+
+
+## On course
+
+courtlistener website 
+
+this case is changed for convenience, not about jurisdiction.
+
+Nikola is like a troll.
